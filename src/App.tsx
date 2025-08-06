@@ -216,7 +216,13 @@ export default function App() {
               element={
                 <>
                   <SignedIn>
-                    <PlannerRedirect />
+                    <div style={{ height: '100vh', width: '100%', padding: '0' }}>
+                      <iframe
+                        src="https://easy-ride-planner-qwwr.onrender.com"
+                        style={{ border: 'none', width: '100%', height: '100%' }}
+                        title="Easy Route Planner"
+                      />
+                    </div>
                   </SignedIn>
                   <SignedOut>
                     <RedirectToSignIn />
@@ -224,6 +230,7 @@ export default function App() {
                 </>
               }
             />
+
           </Routes>
         </div>
       </div>
