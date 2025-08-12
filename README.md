@@ -1,4 +1,4 @@
-#🚗 Easy Ride Planner
+#Easy Ride Planner
 
 Welcome to the Easy Ride Planner project!
 
