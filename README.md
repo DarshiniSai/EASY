@@ -1,5 +1,7 @@
-🚗 Easy Ride Planner — Landing & Authentication
+🚗 Easy Ride Planner
+
 Welcome to the Easy Ride Planner project!
+
 This repository hosts the landing page and user authentication system, where users can sign up, log in, and access the platform securely. Once authenticated, users are redirected to the main map and route planning interface (hosted in a separate repository https://github.com/DarshiniSai/EasyRidePlanner5), which offers route optimization, traffic analysis, turn by turn directions. In this project we used OSRM(Open Source Route Machine) which is a open source API for maps, but its not quite accurate though. Built with React, Vite, TailwindCSS, and Express, and powered by Clerk authentication, the platform combines a sleek user experience with a reliable backend for smooth and secure travel planning.
 Think of it as the friendly front door — users land here, sign in, and then get redirected to the main ride planning interface.
 
