@@ -1,54 +1,44 @@
-# React + TypeScript + Vite
+🚗 Easy Ride Planner — Landing & Authentication
+Welcome to the Easy Ride Planner project!
+This repository hosts the landing page and user authentication system, where users can sign up, log in, and access the platform securely. Once authenticated, users are redirected to the main map and route planning interface (hosted in a separate repository https://github.com/DarshiniSai/EasyRidePlanner5), which offers route optimization, traffic analysis, turn by turn directions. In this project we used OSRM(Open Source Route Machine) which is a open source API for maps, but its not quite accurate though. Built with React, Vite, TailwindCSS, and Express, and powered by Clerk authentication, the platform combines a sleek user experience with a reliable backend for smooth and secure travel planning.
+Think of it as the friendly front door — users land here, sign in, and then get redirected to the main ride planning interface.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🌍 Live Deployment
+Deployed on Render: https://easyrideplanner.onrender.com/
 
-Currently, two official plugins are available:
+📂 Project Structure
+This repo contains:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Landing Page – First impression of the platform.
 
-## Expanding the ESLint configuration
+Authentication – Sign-up, login, and secure session handling.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+🚦 Note: The actual map, routes, and ride planning features live in another repository.
+You can find it here: Easy Ride Planner — Map & Routes (replace with actual repo link)
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+🛠️ Tech Stack
+Frontend: React, Vite, TailwindCSS, Radix UI
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Backend: Express.js, Node.js
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Auth: Clerk Authentication
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+Deployment: Render
+
+🚀 Running Locally
+
+# Clone the repository
+git clone https://github.com/DarshiniSai/Easy-Ride-Planner.git
+
+# Install dependencies
+npm install
+
+# Start development mode
+npm run dev
+
+
+📦 Deployment Notes
+This repo is deployed as a full-stack service on Render.
+
+If you deploy separately (frontend + backend), make sure to update API URLs in your frontend configuration.
+
